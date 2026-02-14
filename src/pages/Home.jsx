@@ -19,6 +19,16 @@ import MagneticButton from '../components/animations/MagneticButton';
 import TiltCard from '../components/animations/TiltCard';
 import { products } from '../data/products';
 
+import factoryAerial from '../assets/factory-aerial.jpeg';
+import farmerWithCow from '../assets/farmer-with-cow.jpeg';
+import productBags from '../assets/product-bags.jpeg';
+import milkingCow from '../assets/milking-cow.jpeg';
+import sheepFarmer from '../assets/sheep-farmer.jpeg';
+import calfProduct from '../assets/calf-product.jpeg';
+import truckFleet from '../assets/truck-fleet.jpeg';
+import goatBarn from '../assets/goat-barn.jpeg';
+import factoryExterior from '../assets/factory-exterior.jpeg';
+
 const highlights = [
   { icon: GiStarMedal, title: 'Üstün Kalite', desc: 'ISO standartlarında üretim ve sürekli kalite kontrol.' },
   { icon: GiShield, title: 'Güvenilirlik', desc: '25 yılı aşkın tecrübe ve binlerce memnun müşteri.' },
@@ -54,9 +64,16 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={factoryAerial}
+            alt="Egebey Yem Fabrikası"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-900/80 via-primary-800/70 to-primary-700/60" />
+        </div>
         <FloatingElements />
-        <div className="absolute inset-0 bg-black/20" />
 
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
@@ -193,12 +210,13 @@ const Home = () => {
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: 'spring', stiffness: 200 }}
-                  className="bg-gradient-to-br from-primary-200 to-primary-300 rounded-3xl aspect-[4/3] flex items-center justify-center overflow-hidden"
+                  className="rounded-3xl aspect-[4/3] overflow-hidden shadow-2xl"
                 >
-                  <div className="text-center text-primary-700">
-                    <GiFactory className="text-7xl mx-auto mb-4 opacity-50" />
-                    <p className="font-semibold text-lg opacity-60">Modern Üretim Tesisi</p>
-                  </div>
+                  <img
+                    src={factoryExterior}
+                    alt="Egebey Yem Modern Üretim Tesisi"
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: -30, y: 30 }}
@@ -311,6 +329,52 @@ const Home = () => {
               </StaggerItem>
             ))}
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Gallery / Showcase */}
+      <section className="section-padding bg-white overflow-hidden">
+        <div className="container-custom">
+          <AnimatedSection effect="blur-in" className="text-center mb-12">
+            <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">Galeri</span>
+            <h2 className="heading-primary mt-2 mb-4">Sahadan Kareler</h2>
+            <p className="text-body max-w-2xl mx-auto">
+              Çiftçilerimizden, tesislerimizden ve ürünlerimizden görüntüler.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[220px]">
+            {[
+              { src: productBags, alt: 'Egebey Yem Ürün Çeşitleri', span: 'col-span-2' },
+              { src: farmerWithCow, alt: 'Çiftçimiz ve Egebey Besi Yemi', span: 'row-span-2' },
+              { src: milkingCow, alt: 'Süt Sağımında Egebey Süt Yemi', span: '' },
+              { src: sheepFarmer, alt: 'Küçükbaş Hayvancılıkta Egebey', span: '' },
+              { src: calfProduct, alt: 'Buzağı Büyütme Tomurcuk', span: '' },
+              { src: truckFleet, alt: 'Egebey Yem Lojistik Filosu', span: 'col-span-2' },
+              { src: goatBarn, alt: 'Keçi Çiftliğinde Egebey Yem', span: '' },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                whileHover={{ scale: 1.03, zIndex: 10 }}
+                className={`relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer ${item.span}`}
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white text-sm font-medium">{item.alt}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

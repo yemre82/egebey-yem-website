@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
-import { GiWheat } from 'react-icons/gi';
+import logoImg from '../assets/logo.jpeg';
 
 const navLinks = [
   { name: 'Ana Sayfa', path: '/' },
@@ -56,26 +56,15 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2 group">
             <motion.div
-              whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
-              transition={{ duration: 0.4 }}
-              className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                scrolled ? 'bg-primary-500' : 'bg-white/20'
-              }`}
+              whileHover={{ scale: 1.08 }}
+              transition={{ duration: 0.3 }}
             >
-              <GiWheat className="text-xl text-white" />
+              <img
+                src={logoImg}
+                alt="Egebey Yem"
+                className="h-12 md:h-14 w-auto object-contain drop-shadow-md"
+              />
             </motion.div>
-            <div>
-              <span className={`text-xl font-bold transition-colors duration-300 ${
-                scrolled ? 'text-primary-700' : 'text-white'
-              }`}>
-                Egebey
-              </span>
-              <span className={`text-xs block -mt-1 transition-colors duration-300 ${
-                scrolled ? 'text-primary-500' : 'text-white/80'
-              }`}>
-                Yem Fabrikası
-              </span>
-            </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-1">

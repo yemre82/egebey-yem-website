@@ -11,6 +11,11 @@ import CountUp from '../components/CountUp';
 import FloatingElements from '../components/FloatingElements';
 import TiltCard from '../components/animations/TiltCard';
 
+import factoryExterior from '../assets/factory-exterior.jpeg';
+import truckFleet from '../assets/truck-fleet.jpeg';
+import factoryAerial from '../assets/factory-aerial.jpeg';
+import productBags from '../assets/product-bags.jpeg';
+
 const processSteps = [
   {
     icon: GiWheat,
@@ -68,7 +73,11 @@ const Production = () => {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="page-hero">
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={factoryExterior} alt="Egebey Yem Üretim Tesisi" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/85 via-primary-800/75 to-primary-700/50" />
+        </div>
         <FloatingElements />
         <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
           <motion.div
@@ -182,7 +191,11 @@ const Production = () => {
       </section>
 
       {/* Factory Capacity */}
-      <section className="section-padding gradient-bg text-white relative overflow-hidden">
+      <section className="section-padding text-white relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={factoryAerial} alt="Egebey Yem Fabrikası Havadan Görünüm" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary-900/80" />
+        </div>
         <FloatingElements />
         <div className="container-custom relative z-10">
           <AnimatedSection effect="zoom-blur" className="text-center mb-12">
@@ -218,12 +231,13 @@ const Production = () => {
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: 'spring', stiffness: 200 }}
-                className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-3xl aspect-[4/3] flex items-center justify-center"
+                className="rounded-3xl aspect-[4/3] overflow-hidden shadow-2xl"
               >
-                <div className="text-center text-primary-700">
-                  <GiMicroscope className="text-7xl mx-auto mb-4 opacity-50" />
-                  <p className="font-semibold text-lg opacity-60">Ar-Ge Laboratuvarı</p>
-                </div>
+                <img
+                  src={productBags}
+                  alt="Egebey Yem Ürünleri"
+                  className="w-full h-full object-cover"
+                />
               </motion.div>
             </AnimatedSection>
 
@@ -267,6 +281,65 @@ const Production = () => {
                   </motion.div>
                 ))}
               </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* Facility & Logistics Photos */}
+      <section className="section-padding bg-secondary-50">
+        <div className="container-custom">
+          <AnimatedSection effect="blur-in" className="text-center mb-12">
+            <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">Tesislerimiz</span>
+            <h2 className="heading-primary mt-2 mb-4">Üretim & Lojistik</h2>
+            <p className="text-body max-w-2xl mx-auto">
+              Modern tesislerimiz ve güçlü lojistik altyapımızla hizmet veriyoruz.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <AnimatedSection delay={0} effect="slide-rotate">
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="rounded-2xl overflow-hidden shadow-xl group"
+              >
+                <div className="aspect-[16/10] overflow-hidden">
+                  <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.6 }}
+                    src={factoryExterior}
+                    alt="Egebey Yem Fabrika Binası"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="bg-white p-5">
+                  <h3 className="font-bold text-primary-700 text-lg">Üretim Tesisimiz</h3>
+                  <p className="text-sm text-dark-light mt-1">Modern altyapı, yüksek kapasite, kesintisiz üretim</p>
+                </div>
+              </motion.div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.15} effect="fade-scale">
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="rounded-2xl overflow-hidden shadow-xl group"
+              >
+                <div className="aspect-[16/10] overflow-hidden">
+                  <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.6 }}
+                    src={truckFleet}
+                    alt="Egebey Yem Lojistik Filosu"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="bg-white p-5">
+                  <h3 className="font-bold text-primary-700 text-lg">Lojistik Filomuz</h3>
+                  <p className="text-sm text-dark-light mt-1">Geniş araç filomuz ile Türkiye genelinde hızlı teslimat</p>
+                </div>
+              </motion.div>
             </AnimatedSection>
           </div>
         </div>

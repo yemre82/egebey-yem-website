@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { GiWheat } from 'react-icons/gi';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { HiLocationMarker, HiPhone, HiMail } from 'react-icons/hi';
+import logoImg from '../assets/logo.jpeg';
 
 const Footer = () => {
   return (
@@ -10,13 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-primary-500 flex items-center justify-center">
-                <GiWheat className="text-xl text-white" />
-              </div>
-              <div>
-                <span className="text-xl font-bold text-white">Egebey</span>
-                <span className="text-xs block -mt-1 text-primary-300">Yem Fabrikası</span>
-              </div>
+              <img
+                src={logoImg}
+                alt="Egebey Yem"
+                className="h-14 w-auto object-contain brightness-110"
+              />
             </Link>
             <p className="text-primary-200/80 text-sm leading-relaxed mb-6">
               25 yılı aşkın tecrübemizle, doğal ve kaliteli yem üretiminde

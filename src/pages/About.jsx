@@ -10,6 +10,11 @@ import AnimatedSection, { StaggerItem } from '../components/AnimatedSection';
 import FloatingElements from '../components/FloatingElements';
 import TiltCard from '../components/animations/TiltCard';
 
+import factoryAerial from '../assets/factory-aerial.jpeg';
+import factoryExterior from '../assets/factory-exterior.jpeg';
+import farmerWithCow from '../assets/farmer-with-cow.jpeg';
+import truckFleet from '../assets/truck-fleet.jpeg';
+
 const timeline = [
   { year: '1998', title: 'Kuruluş', desc: 'Egebey Yem Fabrikası, Aksaray\'da küçük bir tesiste üretime başladı.' },
   { year: '2003', title: 'İlk Büyüme', desc: 'Üretim kapasitesi 2 katına çıkarıldı, yeni ürün hatları eklendi.' },
@@ -61,7 +66,11 @@ const About = () => {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="page-hero">
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={factoryAerial} alt="Egebey Yem Fabrikası" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/85 via-primary-800/75 to-primary-700/60" />
+        </div>
         <FloatingElements />
         <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
           <motion.div
@@ -189,8 +198,48 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Facility Images */}
       <section className="section-padding bg-white">
+        <div className="container-custom">
+          <AnimatedSection effect="blur-in" className="text-center mb-12">
+            <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">Tesislerimiz</span>
+            <h2 className="heading-primary mt-2 mb-4">Modern Üretim Altyapımız</h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { src: factoryExterior, title: 'Üretim Tesisi', desc: '12.000 m² kapalı alan üzerinde modern üretim' },
+              { src: truckFleet, title: 'Lojistik Filomuz', desc: 'Geniş araç filomuz ile hızlı teslimat' },
+              { src: farmerWithCow, title: 'Sahada Yanınızdayız', desc: 'Çiftçilerimize teknik destek ve danışmanlık' },
+            ].map((item, i) => (
+              <AnimatedSection key={i} delay={i * 0.15} effect="fade-scale">
+                <motion.div
+                  whileHover={{ y: -8 }}
+                  className="card overflow-hidden border border-primary-100 hover:border-primary-300 glow-hover"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <motion.img
+                      whileHover={{ scale: 1.08 }}
+                      transition={{ duration: 0.6 }}
+                      src={item.src}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-lg font-bold text-primary-700 mb-1">{item.title}</h3>
+                    <p className="text-sm text-dark-light">{item.desc}</p>
+                  </div>
+                </motion.div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="section-padding bg-secondary-50">
         <div className="container-custom">
           <AnimatedSection effect="blur-in" className="text-center mb-12">
             <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">Temel İlkelerimiz</span>

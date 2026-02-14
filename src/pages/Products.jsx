@@ -8,6 +8,8 @@ import ProductModal from '../components/ProductModal';
 import FloatingElements from '../components/FloatingElements';
 import { products, categories } from '../data/products';
 
+import productBags from '../assets/product-bags.jpeg';
+
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState('Tümü');
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -25,7 +27,11 @@ const Products = () => {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="page-hero">
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={productBags} alt="Egebey Yem Ürünleri" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/85 via-primary-800/70 to-primary-700/50" />
+        </div>
         <FloatingElements />
         <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
           <motion.div

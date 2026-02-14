@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GiWheat } from 'react-icons/gi';
+import logoImg from '../../assets/logo.jpeg';
 
 const LoadingScreen = ({ onComplete }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -27,14 +27,15 @@ const LoadingScreen = ({ onComplete }) => {
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ type: 'spring', stiffness: 200, damping: 15, delay: 0.2 }}
-              className="w-20 h-20 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-6"
+              className="mx-auto mb-6"
             >
-              <motion.div
-                animate={{ rotate: [0, 10, -10, 0] }}
+              <motion.img
+                animate={{ scale: [1, 1.05, 1] }}
                 transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-              >
-                <GiWheat className="text-4xl text-white" />
-              </motion.div>
+                src={logoImg}
+                alt="Egebey Yem"
+                className="h-24 w-auto object-contain drop-shadow-2xl"
+              />
             </motion.div>
 
             <motion.div
@@ -42,8 +43,7 @@ const LoadingScreen = ({ onComplete }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <h1 className="text-3xl font-bold text-white mb-1">Egebey</h1>
-              <p className="text-white/60 text-sm tracking-widest uppercase">Yem Fabrikası</p>
+              <p className="text-white/70 text-sm tracking-widest uppercase">Yemin Parlayan Yıldızı</p>
             </motion.div>
 
             <motion.div

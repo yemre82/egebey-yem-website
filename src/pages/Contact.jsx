@@ -10,6 +10,8 @@ import AnimatedSection, { StaggerItem } from '../components/AnimatedSection';
 import FloatingElements from '../components/FloatingElements';
 import TiltCard from '../components/animations/TiltCard';
 
+import truckFleet from '../assets/truck-fleet.jpeg';
+
 const contactInfo = [
   {
     icon: HiLocationMarker,
@@ -108,7 +110,11 @@ const Contact = () => {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="page-hero">
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={truckFleet} alt="Egebey Yem" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/85 via-primary-800/75 to-primary-700/55" />
+        </div>
         <FloatingElements />
         <div className="container-custom mx-auto px-4 md:px-8 relative z-10">
           <motion.div
