@@ -45,16 +45,28 @@ const ProductModal = ({ product, isOpen, onClose }) => {
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="relative h-56 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center overflow-hidden"
+              className="relative h-72 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden"
             >
-              <motion.span
-                initial={{ scale: 0, rotate: -30 }}
-                animate={{ scale: 1, rotate: 0 }}
-                transition={{ type: 'spring', delay: 0.2, stiffness: 200 }}
-                className="text-8xl"
-              >
-                {product.icon}
-              </motion.span>
+              {product.image ? (
+                <motion.img
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: 'spring', delay: 0.2, stiffness: 200 }}
+                  src={product.image}
+                  alt={product.name}
+                  className="h-full w-full object-contain p-4"
+                />
+              ) : (
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', delay: 0.2 }}
+                  className="text-center text-primary-400"
+                >
+                  <span className="text-7xl block mb-2">📦</span>
+                  <p className="text-sm opacity-50">{product.name}</p>
+                </motion.div>
+              )}
               <motion.button
                 onClick={onClose}
                 whileHover={{ scale: 1.1, rotate: 90 }}

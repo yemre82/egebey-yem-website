@@ -272,13 +272,18 @@ const Home = () => {
                       transition={{ type: 'spring', stiffness: 300 }}
                       className="card border border-primary-100 hover:border-primary-300 glow-hover"
                     >
-                      <div className="h-40 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
-                        <motion.span
-                          className="text-5xl"
-                          whileHover={{ scale: 1.2, rotate: [0, -5, 5, 0] }}
-                        >
-                          {product.icon}
-                        </motion.span>
+                      <div className="h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                        {product.image ? (
+                          <motion.img
+                            src={product.image}
+                            alt={product.name}
+                            className="w-full h-full object-contain p-3"
+                            whileHover={{ scale: 1.08 }}
+                            transition={{ duration: 0.4 }}
+                          />
+                        ) : (
+                          <GiWheat className="text-5xl text-primary-300 opacity-40" />
+                        )}
                       </div>
                       <div className="p-4">
                         <p className="text-xs text-primary-500 font-semibold mb-1">{product.category}</p>
