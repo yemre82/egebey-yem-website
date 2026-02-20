@@ -106,8 +106,8 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Egebey Yem Fabrikası. Tüm hakları saklıdır.
           </p>
           <div className="flex gap-6 text-sm text-primary-300/60">
-            <a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a>
-            <a href="#" className="hover:text-white transition-colors">Kullanım Şartları</a>
+            <Link to="/gizlilik" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
+            <Link to="/kullanim-sartlari" className="hover:text-white transition-colors">Kullanım Şartları</Link>
           </div>
         </div>
       </div>

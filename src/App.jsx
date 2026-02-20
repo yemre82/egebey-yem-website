@@ -12,6 +12,8 @@ import About from './pages/About';
 import Products from './pages/Products';
 import Production from './pages/Production';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 function App() {
   const location = useLocation();
@@ -38,6 +40,8 @@ function App() {
             <Route path="/urunler" element={<PageTransition><Products /></PageTransition>} />
             <Route path="/uretim" element={<PageTransition><Production /></PageTransition>} />
             <Route path="/iletisim" element={<PageTransition><Contact /></PageTransition>} />
+            <Route path="/gizlilik" element={<PageTransition><Privacy /></PageTransition>} />
+            <Route path="/kullanim-sartlari" element={<PageTransition><Terms /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </main>
