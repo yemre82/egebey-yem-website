@@ -31,24 +31,24 @@ import factoryExterior from '../assets/factory-exterior.jpeg';
 
 const highlights = [
   { icon: GiStarMedal, title: 'Üstün Kalite', desc: 'ISO standartlarında üretim ve sürekli kalite kontrol.' },
-  { icon: GiShield, title: 'Güvenilirlik', desc: '25 yılı aşkın tecrübe ve binlerce memnun müşteri.' },
+  { icon: GiShield, title: 'Güvenilirlik', desc: '2013\'ten bu yana süregelen tecrübe ve binlerce memnun müşteri.' },
   { icon: GiFallingLeaf, title: 'Doğallık', desc: '%100 doğal hammaddeler ile üretim garantisi.' },
   { icon: GiWheat, title: 'Deneyim', desc: 'Alanında uzman ekibimizle sürekli Ar-Ge çalışmaları.' },
 ];
 
 const stats = [
-  { value: 25, suffix: '+', label: 'Yıl Deneyim' },
+  { value: 2013, suffix: '', label: 'Kuruluş Yılı' },
   { value: 500, suffix: '+', label: 'Mutlu Çiftçi' },
-  { value: 50, suffix: '+', label: 'Ürün Çeşidi' },
-  { value: 10000, suffix: '+', label: 'Ton/Yıl Üretim' },
+  { value: 30, suffix: '+', label: 'Ürün Çeşidi' },
+  { value: 10000, suffix: '', label: 'Ton/Ay Kapasite' },
 ];
 
 const whyUs = [
   { icon: FaSeedling, title: 'Doğal Hammadde', desc: 'Tüm ürünlerimizde doğal ve kontrollü hammaddeler kullanıyoruz.' },
   { icon: GiMicroscope, title: 'Ar-Ge Çalışmaları', desc: 'Sürekli araştırma ve geliştirme ile formüllerimizi iyileştiriyoruz.' },
-  { icon: GiChemicalDrop, title: 'Kalite Kontrol', desc: 'Her partide laboratuvar analizleri ile kalitemizi garanti altına alıyoruz.' },
-  { icon: GiFactory, title: 'Modern Üretim', desc: 'Son teknoloji üretim hatları ile yüksek kapasiteli üretim.' },
-  { icon: FaTruck, title: 'Hızlı Teslimat', desc: 'Geniş dağıtım ağımız ile siparişlerinizi zamanında teslim ediyoruz.' },
+  { icon: GiChemicalDrop, title: 'Laboratuvar Sistemi', desc: 'Kendi laboratuvarımızda her partide analiz yaparak kaliteyi garanti altına alıyoruz.' },
+  { icon: GiFactory, title: 'Modern Üretim', desc: 'Aylık 10.000 ton kapasiteli modern üretim hatlarıyla yüksek verimli üretim.' },
+  { icon: FaTruck, title: 'Saha Satış Ekibi', desc: 'Profesyonel saha satış ekibimizle çiftçilerimize yerinde hizmet sunuyoruz.' },
   { icon: FaHandshake, title: 'Müşteri Memnuniyeti', desc: 'Satış sonrası destek ve teknik danışmanlık hizmeti sunuyoruz.' },
 ];
 
@@ -85,7 +85,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <span className="inline-block bg-white/15 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full mb-6 shimmer">
-              25 Yılı Aşkın Tecrübe ile Kaliteli Yem Üretimi
+              2013'ten Bu Yana Kaliteli Yem Üretimi
             </span>
           </motion.div>
 
@@ -189,9 +189,9 @@ const Home = () => {
                 Türkiye'nin Güvenilir Yem Üreticisi
               </h2>
               <p className="text-body mb-4">
-                Egebey Yem Fabrikası olarak 25 yılı aşkın tecrübemizle, Aksaray'dan
-                tüm Türkiye'ye kaliteli ve doğal yem ürünleri sunuyoruz. Modern üretim
-                tesislerimizde, uluslararası standartlarda üretim yapıyoruz.
+                Egebey Yem Fabrikası olarak 2013'ten bu yana Aksaray'dan
+                tüm Türkiye'ye kaliteli ve doğal yem ürünleri sunuyoruz. Aylık 10.000 ton
+                kapasiteli modern tesislerimizde, uluslararası standartlarda üretim yapıyoruz.
               </p>
               <p className="text-body mb-8">
                 Hayvan sağlığını ve çiftçi memnuniyetini ön planda tutarak, sürekli Ar-Ge

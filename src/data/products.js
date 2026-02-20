@@ -3,7 +3,7 @@ import cagriBesi from '../assets/cagri-besi.jpeg';
 import efeBesi from '../assets/efe-besi.jpeg';
 import baharSut from '../assets/bahar-sut.jpeg';
 import favoriSut from '../assets/favori-sut.jpeg';
-import favoriSutDuve from '../assets/favori-sut-duve.jpeg';
+
 import sirinSut from '../assets/sirin-sut.jpeg';
 import simgeSut from '../assets/simge-sut.jpeg';
 import tomurcukBuzagi from '../assets/tomurcuk-buzagi.jpeg';
@@ -106,25 +106,6 @@ export const products = [
     weight: '50 kg',
     usage: 'Süt inekleri, laktasyon dönemi beslenme programları.',
     recommendation: 'Günlük 10-15 kg arası, kaliteli kaba yem ile birlikte verilmelidir.',
-  },
-  {
-    id: 6,
-    name: 'Favori Süt 19 Düve',
-    category: 'Süt Yemlerimiz',
-    image: favoriSutDuve,
-    shortDesc: 'Düvelerin süt verimine hazırlık döneminde dengeli beslenme.',
-    description: 'Egebey Favori Süt 19 Düve, genç düvelerin süt üretim dönemine sağlıklı bir şekilde hazırlanması için formüle edilmiştir. Gelişim dönemindeki düvelerin protein ve enerji ihtiyaçlarını karşılar.',
-    nutrition: {
-      'Ham Protein': '%19',
-      'Ham Yağ': '%3-4',
-      'Ham Selüloz': '%8-10',
-      'Kalsiyum': '%0.9-1.2',
-      'Fosfor': '%0.5-0.7',
-      'Metabolik Enerji': '2750 kcal/kg',
-    },
-    weight: '50 kg',
-    usage: 'Düveler, süt üretimine hazırlık dönemi.',
-    recommendation: 'Günlük 8-12 kg arası, yaşa ve canlı ağırlığa göre ayarlanarak verilmelidir.',
   },
   {
     id: 7,

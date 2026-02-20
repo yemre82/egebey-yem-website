@@ -22,13 +22,13 @@ const contactInfo = [
   {
     icon: HiPhone,
     title: 'Telefon',
-    lines: ['+90 (382) 123 45 67', '+90 (382) 123 45 68'],
+    lines: ['0382 351 22 98', '0546 583 00 01'],
     color: 'bg-blue-100 text-blue-600',
   },
   {
     icon: HiMail,
     title: 'E-posta',
-    lines: ['info@egebeyyem.com', 'satis@egebeyyem.com'],
+    lines: ['egebeyyem@hotmail.com'],
     color: 'bg-amber-100 text-amber-600',
   },
   {
@@ -44,7 +44,7 @@ const confettiPieces = Array.from({ length: 20 }, (_, i) => ({
   y: -(Math.random() * 200 + 100),
   rotate: Math.random() * 720 - 360,
   delay: Math.random() * 0.3,
-  color: ['#40916C', '#52B788', '#95D5B2', '#D8F3DC', '#FFD700'][i % 5],
+  color: ['#8FA525', '#B5C84E', '#CFDB8D', '#EFF3D9', '#FFD700'][i % 5],
 }));
 
 const Contact = () => {
@@ -373,22 +373,19 @@ const Contact = () => {
 
             <AnimatedSection effect="fade-scale">
               <div className="space-y-6">
-                {/* Map Placeholder */}
-                <motion.div
-                  whileHover={{ scale: 1.01 }}
-                  className="bg-primary-100 rounded-2xl h-80 flex items-center justify-center overflow-hidden"
-                >
-                  <div className="text-center text-primary-700">
-                    <motion.div
-                      animate={{ y: [0, -5, 0] }}
-                      transition={{ repeat: Infinity, duration: 2 }}
-                    >
-                      <HiLocationMarker className="text-5xl mx-auto mb-3 opacity-50" />
-                    </motion.div>
-                    <p className="font-semibold opacity-60">Google Maps</p>
-                    <p className="text-sm opacity-40">Ortaköy / Aksaray</p>
-                  </div>
-                </motion.div>
+                {/* Google Maps */}
+                <div className="rounded-2xl h-80 overflow-hidden shadow-lg">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.5!2d34.084356!3d38.7614074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d5bf6aeb77078f%3A0xab2b38173e8f36c2!2sEgebey%20Yem!5e0!3m2!1str!2str!4v1700000000000"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Egebey Yem Konum"
+                  />
+                </div>
 
                 {/* Working Hours */}
                 <div className="card p-6 border border-primary-100">

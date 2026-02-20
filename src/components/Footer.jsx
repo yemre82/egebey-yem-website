@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { HiLocationMarker, HiPhone, HiMail } from 'react-icons/hi';
-import logoImg from '../assets/logo.jpeg';
+import logoImg from '../assets/IMG_6729.PNG';
 
 const Footer = () => {
   return (
@@ -13,11 +13,11 @@ const Footer = () => {
               <img
                 src={logoImg}
                 alt="Egebey Yem"
-                className="h-14 w-auto object-contain brightness-110"
+                className="h-16 w-auto object-contain brightness-110"
               />
             </Link>
             <p className="text-primary-200/80 text-sm leading-relaxed mb-6">
-              25 yılı aşkın tecrübemizle, doğal ve kaliteli yem üretiminde
+              2013'ten bu yana doğal ve kaliteli yem üretiminde
               Türkiye'nin güvenilir markası olmaya devam ediyoruz.
             </p>
             <div className="flex gap-3">
@@ -82,14 +82,19 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <HiPhone className="text-primary-400 text-lg shrink-0" />
-                <a href="tel:+903821234567" className="text-primary-200/80 text-sm hover:text-white transition-colors">
-                  +90 (382) 123 45 67
-                </a>
+                <div>
+                  <a href="tel:03823512298" className="text-primary-200/80 text-sm hover:text-white transition-colors block">
+                    0382 351 22 98
+                  </a>
+                  <a href="tel:05465830001" className="text-primary-200/80 text-sm hover:text-white transition-colors block">
+                    0546 583 00 01
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <HiMail className="text-primary-400 text-lg shrink-0" />
-                <a href="mailto:info@egebeyyem.com" className="text-primary-200/80 text-sm hover:text-white transition-colors">
-                  info@egebeyyem.com
+                <a href="mailto:egebeyyem@hotmail.com" className="text-primary-200/80 text-sm hover:text-white transition-colors">
+                  egebeyyem@hotmail.com
                 </a>
               </li>
             </ul>

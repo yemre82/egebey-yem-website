@@ -63,8 +63,8 @@ const qualityItems = [
 ];
 
 const capacityStats = [
-  { value: 10000, suffix: '+', label: 'Ton/Yıl Kapasite' },
-  { value: 50, suffix: '+', label: 'Ürün Çeşidi' },
+  { value: 10000, suffix: '', label: 'Ton/Ay Kapasite' },
+  { value: 30, suffix: '+', label: 'Ürün Çeşidi' },
   { value: 3, suffix: '', label: 'Üretim Hattı' },
   { value: 24, suffix: '/7', label: 'Üretim Süresi' },
 ];

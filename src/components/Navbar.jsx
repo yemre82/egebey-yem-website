@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
-import logoImg from '../assets/logo.jpeg';
+import logoImg from '../assets/IMG_6729.PNG';
 
 const navLinks = [
   { name: 'Ana Sayfa', path: '/' },
@@ -62,7 +62,7 @@ const Navbar = () => {
               <img
                 src={logoImg}
                 alt="Egebey Yem"
-                className="h-12 md:h-14 w-auto object-contain drop-shadow-md"
+                className="h-12 md:h-16 w-auto object-contain drop-shadow-md"
               />
             </motion.div>
           </Link>

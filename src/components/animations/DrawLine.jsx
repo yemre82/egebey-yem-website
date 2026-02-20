@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const DrawLine = ({ className = '', color = '#40916C', strokeWidth = 2 }) => {
+const DrawLine = ({ className = '', color = '#8FA525', strokeWidth = 2 }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

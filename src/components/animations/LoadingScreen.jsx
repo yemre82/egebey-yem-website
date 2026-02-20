@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logoImg from '../../assets/logo.jpeg';
+import logoImg from '../../assets/IMG_6729.PNG';
 
 const LoadingScreen = ({ onComplete }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -34,7 +34,7 @@ const LoadingScreen = ({ onComplete }) => {
                 transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
                 src={logoImg}
                 alt="Egebey Yem"
-                className="h-24 w-auto object-contain drop-shadow-2xl"
+                className="h-32 md:h-40 w-auto object-contain drop-shadow-2xl"
               />
             </motion.div>
 

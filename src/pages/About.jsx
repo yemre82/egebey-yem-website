@@ -16,17 +16,16 @@ import farmerWithCow from '../assets/farmer-with-cow.jpeg';
 import truckFleet from '../assets/truck-fleet.jpeg';
 
 const timeline = [
-  { year: '1998', title: 'Kuruluş', desc: 'Egebey Yem Fabrikası, Aksaray\'da küçük bir tesiste üretime başladı.' },
-  { year: '2003', title: 'İlk Büyüme', desc: 'Üretim kapasitesi 2 katına çıkarıldı, yeni ürün hatları eklendi.' },
-  { year: '2008', title: 'ISO Sertifikası', desc: 'ISO 9001 ve ISO 22000 kalite belgelerini almaya hak kazandık.' },
-  { year: '2013', title: 'Modern Tesis', desc: 'Ortaköy OSB\'deki yeni modern üretim tesisimize taşınarak kapasitemizi 5 katına çıkardık.' },
-  { year: '2018', title: 'Ar-Ge Merkezi', desc: 'Bünyemizde Ar-Ge merkezi kurarak inovatif ürün geliştirmeye başladık.' },
-  { year: '2023', title: 'Pazar Lideri', desc: 'İç Anadolu Bölgesi\'nin en büyük yem üreticilerinden biri konumuna yükseldik.' },
+  { year: '2013', title: 'Kuruluş', desc: 'Egebey Yem Fabrikası, Aksaray Ortaköy OSB\'de modern tesisiyle üretime başladı.' },
+  { year: '2016', title: 'Kapasite Artışı', desc: 'Artan taleple birlikte üretim kapasitesi artırıldı, yeni ürün hatları eklendi.' },
+  { year: '2019', title: 'Laboratuvar Sistemi', desc: 'Bünyemizde kalite kontrol laboratuvarı kurarak her partide analiz yapılmaya başlandı.' },
+  { year: '2021', title: 'Saha Satış Ekibi', desc: 'Profesyonel saha satış ekibimizle çiftçilerimize yerinde hizmet vermeye başladık.' },
+  { year: '2024', title: 'Aylık 10.000 Ton', desc: 'Aylık 10.000 ton üretim kapasitesine ulaşarak 30\'dan fazla ürün çeşidiyle sektörde güçlü konumumuzu pekiştirdik.' },
 ];
 
 const values = [
   { icon: GiStarMedal, title: 'Kalite', desc: 'Uluslararası standartlarda üretim yaparak ürünlerimizin kalitesini garanti altına alıyoruz.', color: 'bg-green-100 text-green-600' },
-  { icon: GiShield, title: 'Güvenilirlik', desc: '25 yıllık tecrübemiz ve binlerce memnun müşterimizle güvenilir bir iş ortağıyız.', color: 'bg-blue-100 text-blue-600' },
+  { icon: GiShield, title: 'Güvenilirlik', desc: '2013\'ten bu yana süregelen tecrübemiz ve binlerce memnun müşterimizle güvenilir bir iş ortağıyız.', color: 'bg-blue-100 text-blue-600' },
   { icon: GiFallingLeaf, title: 'Sürdürülebilirlik', desc: 'Çevreye duyarlı üretim süreçlerimizle gelecek nesillere yaşanabilir bir dünya bırakıyoruz.', color: 'bg-amber-100 text-amber-600' },
   { icon: GiMicroscope, title: 'İnovasyon', desc: 'Sürekli Ar-Ge çalışmalarımızla sektörde yenilikçi ürünler geliştiriyoruz.', color: 'bg-purple-100 text-purple-600' },
 ];
@@ -87,7 +86,7 @@ const About = () => {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">Hakkımızda</h1>
             <p className="text-white/70 text-lg mt-4 max-w-2xl">
-              25 yılı aşkın tecrübemiz, misyonumuz ve değerlerimizle tanışın.
+              2013'ten bu yana süregelen tecrübemiz, misyonumuz ve değerlerimizle tanışın.
             </p>
           </motion.div>
         </div>
@@ -100,7 +99,7 @@ const About = () => {
             <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">Hikayemiz</span>
             <h2 className="heading-primary mt-2 mb-4">Kuruluştan Bugüne</h2>
             <p className="text-body max-w-2xl mx-auto">
-              1998'den bu yana süregelen yolculuğumuzda attığımız her adım, kalite ve güven üzerine inşa edildi.
+              2013'ten bu yana süregelen yolculuğumuzda attığımız her adım, kalite ve güven üzerine inşa edildi.
             </p>
           </AnimatedSection>
 
