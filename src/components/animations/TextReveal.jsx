@@ -36,7 +36,7 @@ const TextReveal = ({ text, className = '', delay = 0, staggerDelay = 0.04 }) =>
       variants={container}
       initial="hidden"
       animate="visible"
-      className={`inline-flex flex-wrap ${className}`}
+      className={`inline-flex flex-wrap justify-center ${className}`}
     >
       {words.map((word, i) => (
         <motion.span
