@@ -96,7 +96,7 @@ const Home = () => {
           </motion.div>
 
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            <TextReveal text="Doğadan Sofraya, Kaliteli Yem Üretimi" delay={0.4} />
+            <TextReveal text="Sağlıklı Hayvanlar, Güçlü Üretim" delay={0.4} />
           </h1>
 
           <motion.p
