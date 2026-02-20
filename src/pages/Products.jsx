@@ -7,6 +7,7 @@ import ProductCard from '../components/ProductCard';
 import ProductModal from '../components/ProductModal';
 import FloatingElements from '../components/FloatingElements';
 import { products, categories } from '../data/products';
+import SEO from '../components/SEO';
 
 import productBags from '../assets/product-bags.jpeg';
 
@@ -26,6 +27,11 @@ const Products = () => {
 
   return (
     <div>
+      <SEO
+        title="Ürünlerimiz"
+        description="Egebey Yem ürün çeşitleri - Sürat Besi, Çağrı Besi, Efe Besi, Bahar Süt, Favori Süt, Sirin Süt, Simge Süt, Tomurcuk Buzağı, Tavuk Yemi, Civciv Yemi. 30+ çeşit besi yemi, süt yemi, buzağı yemi ve kanatlı yemi."
+        keywords="besi yemi, süt yemi, buzağı yemi, tavuk yemi, civciv yemi, kanatlı yemi, Sürat Besi yemi, Çağrı Besi yemi, Efe Besi yemi, Bahar Süt yemi, Favori Süt yemi, Sirin Süt yemi, Simge Süt yemi, Tomurcuk Buzağı yemi, yem fiyatları, yem çeşitleri, büyükbaş yem, hayvan yemi satış"
+      />
       {/* Hero Banner */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">

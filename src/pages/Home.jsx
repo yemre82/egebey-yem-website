@@ -18,6 +18,7 @@ import TextReveal from '../components/animations/TextReveal';
 import MagneticButton from '../components/animations/MagneticButton';
 import TiltCard from '../components/animations/TiltCard';
 import { products } from '../data/products';
+import SEO from '../components/SEO';
 
 import factoryAerial from '../assets/factory-aerial.jpeg';
 import farmerWithCow from '../assets/farmer-with-cow.jpeg';
@@ -63,6 +64,11 @@ const Home = () => {
 
   return (
     <div>
+      <SEO
+        title="Ana Sayfa"
+        description="Egebey Yem Fabrikası - Aksaray Ortaköy'de 2013'ten bu yana aylık 10.000 ton kapasiteyle besi yemi, süt yemi, buzağı yemi ve kanatlı yemi üretimi. 30+ ürün çeşidi ile Türkiye'nin güvenilir yem markası."
+        keywords="yem, yem fabrikası, hayvan yemi, besi yemi, süt yemi, buzağı yemi, tavuk yemi, Aksaray yem, Ortaköy yem, Egebey Yem, kaliteli yem, doğal yem, yem üreticisi, yem satışı, yem fiyatları"
+      />
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

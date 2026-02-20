@@ -11,6 +11,7 @@ import CountUp from '../components/CountUp';
 import FloatingElements from '../components/FloatingElements';
 import TiltCard from '../components/animations/TiltCard';
 
+import SEO from '../components/SEO';
 import factoryExterior from '../assets/factory-exterior.jpeg';
 import truckFleet from '../assets/truck-fleet.jpeg';
 import factoryAerial from '../assets/factory-aerial.jpeg';
@@ -72,6 +73,11 @@ const capacityStats = [
 const Production = () => {
   return (
     <div>
+      <SEO
+        title="Üretim ve Kalite"
+        description="Egebey Yem üretim süreci ve kalite kontrol - Aylık 10.000 ton kapasiteli modern üretim tesisi, laboratuvar sistemi, HACCP ve ISO sertifikalı üretim. Hammaddeden son ürüne tam izlenebilirlik."
+        keywords="yem üretim süreci, kalite kontrol yem, yem fabrikası üretim, HACCP yem, ISO yem üretimi, yem laboratuvarı, yem hammadde, yem formülasyonu, yem kalitesi, modern yem fabrikası"
+      />
       {/* Hero Banner */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">

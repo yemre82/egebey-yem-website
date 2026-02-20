@@ -10,6 +10,7 @@ import AnimatedSection, { StaggerItem } from '../components/AnimatedSection';
 import FloatingElements from '../components/FloatingElements';
 import TiltCard from '../components/animations/TiltCard';
 
+import SEO from '../components/SEO';
 import factoryAerial from '../assets/factory-aerial.jpeg';
 import factoryExterior from '../assets/factory-exterior.jpeg';
 import farmerWithCow from '../assets/farmer-with-cow.jpeg';
@@ -64,6 +65,11 @@ const About = () => {
 
   return (
     <div>
+      <SEO
+        title="Hakkımızda"
+        description="Egebey Yem Fabrikası hakkında - 2013'ten bu yana Aksaray Ortaköy OSB'de modern tesislerde kaliteli yem üretimi. Laboratuvar sistemi ve profesyonel saha satış ekibi ile güvenilir yem üreticisi."
+        keywords="Egebey Yem hakkında, yem fabrikası Aksaray, yem üretim tesisi, kaliteli yem üretimi, güvenilir yem markası, hayvan yemi üreticisi, Ortaköy OSB yem"
+      />
       {/* Hero Banner */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">

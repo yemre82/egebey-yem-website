@@ -10,6 +10,7 @@ import AnimatedSection, { StaggerItem } from '../components/AnimatedSection';
 import FloatingElements from '../components/FloatingElements';
 import TiltCard from '../components/animations/TiltCard';
 
+import SEO from '../components/SEO';
 import truckFleet from '../assets/truck-fleet.jpeg';
 
 const contactInfo = [
@@ -109,6 +110,11 @@ const Contact = () => {
 
   return (
     <div>
+      <SEO
+        title="İletişim"
+        description="Egebey Yem Fabrikası iletişim bilgileri - Adres: Ortaköy OSB, Aksaray. Tel: 0382 351 22 98 - 0546 583 00 01. E-posta: egebeyyem@hotmail.com. Yem siparişi ve teknik danışmanlık için bize ulaşın."
+        keywords="Egebey Yem iletişim, yem siparişi, yem fabrikası telefon, Aksaray yem sipariş, yem danışmanlık, Ortaköy yem fabrikası, yem satın al, yem bayilik"
+      />
       {/* Hero Banner */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">
