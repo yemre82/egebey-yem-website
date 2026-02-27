@@ -7,6 +7,8 @@ import favoriSut from '../assets/favori-sut.jpeg';
 import sirinSut from '../assets/sirin-sut.jpeg';
 import simgeSut from '../assets/simge-sut.jpeg';
 import tomurcukBuzagi from '../assets/tomurcuk-buzagi.jpeg';
+import tokluBesi from '../assets/toklu-besi.png';
+import baharBesi from '../assets/bahar-besi.png';
 
 export const products = [
   // Besi Yemlerimiz
@@ -66,6 +68,46 @@ export const products = [
     weight: '50 kg',
     usage: 'Besi sığırları, büyükbaş besi programları.',
     recommendation: 'Günlük 8-12 kg arasında, hayvanın canlı ağırlığına ve besi dönemine göre ayarlanarak verilmelidir.',
+  },
+
+  {
+    id: 12,
+    name: 'Toklu Yemi',
+    category: 'Besi Yemlerimiz',
+    image: tokluBesi,
+    shortDesc: 'Tokluların sağlıklı gelişimi ve besi performansı için özel formül.',
+    description: 'Egebey Toklu Yemi, küçükbaş hayvanların besi döneminde ihtiyaç duyduğu tüm besin maddelerini dengeli biçimde içerir. Tokluların hızlı ve sağlıklı kilo alımını destekleyen özel formülü ile verimli bir besi süreci sağlar. Doğal hammaddelerden üretilmiştir.',
+    nutrition: {
+      'Ham Protein': '%14-16',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%0.8-1.2',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2700 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Toklular, küçükbaş besi programları.',
+    recommendation: 'Günlük 1-2 kg arasında, hayvanın canlı ağırlığına göre ayarlanarak verilmesi önerilir. Kaliteli kaba yem ile birlikte sunulmalıdır.',
+  },
+
+  {
+    id: 13,
+    name: 'Bahar Besi',
+    category: 'Besi Yemlerimiz',
+    image: baharBesi,
+    shortDesc: 'Büyükbaş besi hayvanları için dengeli ve ekonomik besi yemi.',
+    description: 'Egebey Bahar Besi Yemi, büyükbaş hayvanların besi döneminde dengeli beslenme ihtiyaçlarını karşılamak üzere formüle edilmiştir. Ekonomik yapısıyla verimli bir besi süreci sunarken, hayvanların sağlıklı kilo alımını destekler. Kaliteli hammaddelerden üretilmiştir.',
+    nutrition: {
+      'Ham Protein': '%13-15',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%9-11',
+      'Kalsiyum': '%0.8-1.2',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2700 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Besi sığırları, büyükbaş besi programları.',
+    recommendation: 'Günlük 8-12 kg arasında, hayvanın canlı ağırlığına ve besi dönemine göre ayarlanarak kaba yem ile birlikte verilmesi önerilir.',
   },
 
   // Süt Yemlerimiz
