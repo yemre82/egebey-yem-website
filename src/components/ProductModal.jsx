@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IoClose } from 'react-icons/io5';
 import { GiChemicalDrop, GiMeal } from 'react-icons/gi';
@@ -20,6 +21,17 @@ const contentItem = {
 };
 
 const ProductModal = ({ product, isOpen, onClose }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   if (!product) return null;
 
   return (
@@ -29,15 +41,15 @@ const ProductModal = ({ product, isOpen, onClose }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
           onClick={onClose}
         >
           <motion.div
-            initial={{ opacity: 0, y: 100, rotateX: 8 }}
-            animate={{ opacity: 1, y: 0, rotateX: 0 }}
-            exit={{ opacity: 0, y: 60, rotateX: 4, scale: 0.95 }}
+            initial={{ opacity: 0, y: 100, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 60, scale: 0.95 }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            style={{ perspective: 1200 }}
             className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
@@ -71,7 +83,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                 onClick={onClose}
                 whileHover={{ scale: 1.1, rotate: 90 }}
                 whileTap={{ scale: 0.9 }}
-                className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center text-white transition-colors cursor-pointer"
+                className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/20 hover:bg-black/40 flex items-center justify-center text-white transition-colors cursor-pointer"
               >
                 <IoClose size={24} />
               </motion.button>
