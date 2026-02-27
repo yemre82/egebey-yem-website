@@ -24,6 +24,13 @@ import yumurtaPilicGelistirme from '../assets/yumurta-piliç-geliştirme.png';
 import hindiYemi from '../assets/hindi-yemi.png';
 import kazYemi from '../assets/kaz-yemi.png';
 import deveKusuYemi from '../assets/deve-kuşu-yemi.png';
+import kuzuBuyutme from '../assets/kuzu-büyütme.png';
+import kuzuBesi from '../assets/kuzu besi.png';
+import kuzuBaslangic from '../assets/kuzu-baslangic.png';
+import koyunBesi from '../assets/koyun-besi.png';
+import koyunSut from '../assets/koyun-süt.png';
+import kuruDonem from '../assets/kuru-donem.png';
+import performansBesi from '../assets/performans-besi.png';
 
 export const products = [
   // Besi Yemlerimiz
@@ -125,6 +132,104 @@ export const products = [
     recommendation: 'Günlük 8-12 kg arasında, hayvanın canlı ağırlığına ve besi dönemine göre ayarlanarak kaba yem ile birlikte verilmesi önerilir.',
   },
 
+  {
+    id: 31,
+    name: 'Kuzu Başlangıç Yemi',
+    category: 'Besi Yemlerimiz',
+    image: kuzuBaslangic,
+    shortDesc: 'Kuzuların ilk günlerinden itibaren sağlıklı gelişimi için başlangıç yemi.',
+    description: 'Egebey Kuzu Başlangıç Yemi, yeni doğan kuzuların erken dönem beslenmesi için özel olarak formüle edilmiştir. Yüksek sindirilebilirlik oranı ile rumen gelişimini hızlandırır ve kuzuların sütten kesime geçişini kolaylaştırır.',
+    nutrition: {
+      'Ham Protein': '%18-20',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%7-9',
+      'Kalsiyum': '%0.9-1.3',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2800 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Yeni doğan kuzular, kuzu başlangıç programları.',
+    recommendation: 'Doğumdan itibaren serbest erişimli olarak sunulabilir. Anne sütü ile birlikte verilmelidir.',
+  },
+  {
+    id: 29,
+    name: 'Kuzu Büyütme Yemi',
+    category: 'Besi Yemlerimiz',
+    image: kuzuBuyutme,
+    shortDesc: 'Kuzuların sağlıklı büyümesi ve gelişimi için özel başlangıç yemi.',
+    description: 'Egebey Kuzu Büyütme Yemi, kuzuların erken dönem beslenmesinde ihtiyaç duyduğu tüm besin maddelerini dengeli biçimde sunar. Yüksek sindirilebilirlik oranı ile kuzuların rumen gelişimini destekler ve sağlıklı büyümelerini sağlar.',
+    nutrition: {
+      'Ham Protein': '%16-18',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%0.8-1.2',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2750 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Kuzular, küçükbaş büyütme programları.',
+    recommendation: 'Sütten kesim döneminden itibaren serbest erişimli olarak sunulabilir. Kaliteli kaba yem ile birlikte verilmelidir.',
+  },
+  {
+    id: 30,
+    name: 'Kuzu Besi Yemi',
+    category: 'Besi Yemlerimiz',
+    image: kuzuBesi,
+    shortDesc: 'Kuzuların besi döneminde hızlı ve sağlıklı kilo alımı için özel formül.',
+    description: 'Egebey Kuzu Besi Yemi, küçükbaş hayvanların besi döneminde maksimum performans göstermesi için formüle edilmiştir. Yüksek enerji ve protein içeriği ile kuzuların hızlı kilo alımını destekler ve et kalitesini artırır.',
+    nutrition: {
+      'Ham Protein': '%15-17',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%0.8-1.2',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2700 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Besi kuzuları, küçükbaş besi programları.',
+    recommendation: 'Günlük 1-2 kg arasında, hayvanın canlı ağırlığına göre ayarlanarak kaba yem ile birlikte verilmelidir.',
+  },
+
+  {
+    id: 32,
+    name: 'Koyun Besi Yemi',
+    category: 'Besi Yemlerimiz',
+    image: koyunBesi,
+    shortDesc: 'Koyunların besi döneminde verimli kilo alımı için özel formül.',
+    description: 'Egebey Koyun Besi Yemi, küçükbaş hayvanların besi döneminde ihtiyaç duyduğu tüm besin maddelerini dengeli biçimde içerir. Yüksek enerji ve protein oranı ile koyunların hızlı ve sağlıklı kilo alımını destekler, et kalitesini artırır.',
+    nutrition: {
+      'Ham Protein': '%14-16',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%0.8-1.2',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2700 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Besi koyunları, küçükbaş besi programları.',
+    recommendation: 'Günlük 1.5-2.5 kg arasında, hayvanın canlı ağırlığına göre ayarlanarak kaba yem ile birlikte verilmelidir.',
+  },
+
+  {
+    id: 35,
+    name: 'Performans Besi',
+    category: 'Besi Yemlerimiz',
+    image: performansBesi,
+    shortDesc: 'Yüksek performanslı besi programları için premium besi yemi.',
+    description: 'Egebey Performans Besi Yemi, büyükbaş hayvanların yoğun besi döneminde maksimum performans göstermesi için özel olarak tasarlanmıştır. Yüksek enerji ve protein yoğunluğu ile hızlı kilo alımını ve üstün et kalitesini destekler.',
+    nutrition: {
+      'Ham Protein': '%15-17',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%7-9',
+      'Kalsiyum': '%0.9-1.3',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2800 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Besi sığırları, yoğun besi programları.',
+    recommendation: 'Günlük rasyona ek olarak 3-5 kg arası, hayvanın canlı ağırlığına ve besi dönemine göre ayarlanarak verilmelidir.',
+  },
+
   // Süt Yemlerimiz
   {
     id: 4,
@@ -221,6 +326,46 @@ export const products = [
     weight: '25 kg',
     usage: 'Yüksek verimli süt inekleri, yoğun laktasyon dönemi.',
     recommendation: 'Günlük rasyona ek olarak 2-4 kg arası, süt verimine bağlı olarak ayarlanarak verilmelidir.',
+  },
+
+  {
+    id: 33,
+    name: 'Koyun Süt Yemi',
+    category: 'Süt Yemlerimiz',
+    image: koyunSut,
+    shortDesc: 'Süt koyunlarının verimini artıran özel süt yemi.',
+    description: 'Egebey Koyun Süt Yemi, süt koyunlarının laktasyon döneminde ihtiyaç duyduğu tüm besin maddelerini dengeli biçimde içerir. Süt verimini ve kalitesini artıran özel formülü ile koyunların sağlıklı bir laktasyon dönemi geçirmesini destekler.',
+    nutrition: {
+      'Ham Protein': '%16-18',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%1.0-1.4',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2750 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Süt koyunları, küçükbaş süt üretimi programları.',
+    recommendation: 'Günlük 1.5-2.5 kg arasında, süt verimine göre ayarlanarak kaliteli kaba yem ile birlikte verilmelidir.',
+  },
+
+  {
+    id: 34,
+    name: 'Kuru Dönem Yemi',
+    category: 'Süt Yemlerimiz',
+    image: kuruDonem,
+    shortDesc: '%16 protein ile süt ineklerinin kuru dönem beslenmesi için özel formül.',
+    description: 'Egebey Kuru Dönem Yemi, süt ineklerinin laktasyon arası kuru dönemde ihtiyaç duyduğu besin maddelerini karşılamak üzere formüle edilmiştir. %16 ham protein içeriği ile ineğin bir sonraki laktasyon dönemine sağlıklı hazırlanmasını destekler, meme sağlığını korur ve doğum sonrası verimliliği artırır.',
+    nutrition: {
+      'Ham Protein': '%16',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%10-12',
+      'Kalsiyum': '%0.6-0.9',
+      'Fosfor': '%0.4-0.6',
+      'Metabolik Enerji': '2500 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Kuru dönemdeki süt inekleri, doğum öncesi hazırlık programları.',
+    recommendation: 'Kuru döneme giriş ile birlikte günlük 6-10 kg arasında, kaliteli kaba yem ile birlikte verilmelidir.',
   },
 
   // Buzağı Yemlerimiz
