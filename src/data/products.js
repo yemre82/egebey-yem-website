@@ -9,6 +9,21 @@ import simgeSut from '../assets/simge-sut.jpeg';
 import tomurcukBuzagi from '../assets/tomurcuk-buzagi.jpeg';
 import tokluBesi from '../assets/toklu-besi.png';
 import baharBesi from '../assets/bahar-besi.png';
+import nazBuzagiBaslangic from '../assets/naz-buzagi-baslangic.png';
+import baharBuzagiBuyutme from '../assets/bahar-buzagi-buyutme.png';
+import gebeDuveYemi from '../assets/gebe-düve-yemi.png';
+import duveYemi from '../assets/düve-yemi.png';
+import atomSutYemi from '../assets/atom-süt-yemi.png';
+import gezenTavukYemi from '../assets/gezen-tavuk-yemi.png';
+import yumurtaTavuk1Donem from '../assets/yumurta-tavuk-1.donem.png';
+import yumurtaCivcivYemi from '../assets/yumurta-civciv-yemi.png';
+import etlikCivcivYemi from '../assets/etlik-civciv-yemi.png';
+import etlikPilicYemi from '../assets/etlik-piliç-yemi.png';
+import yumurtaPilicBuyutme from '../assets/yumurta-piliç-büyütme.png';
+import yumurtaPilicGelistirme from '../assets/yumurta-piliç-geliştirme.png';
+import hindiYemi from '../assets/hindi-yemi.png';
+import kazYemi from '../assets/kaz-yemi.png';
+import deveKusuYemi from '../assets/deve-kuşu-yemi.png';
 
 export const products = [
   // Besi Yemlerimiz
@@ -188,6 +203,26 @@ export const products = [
     recommendation: 'Günlük 12-18 kg arası, süt verimine bağlı olarak ayarlanmalıdır.',
   },
 
+  {
+    id: 18,
+    name: 'Atom Süt Yem 36',
+    category: 'Süt Yemlerimiz',
+    image: atomSutYemi,
+    shortDesc: '%36 protein ile yoğun laktasyon döneminde maksimum süt verimi.',
+    description: 'Egebey Atom Süt Yem 36, yüksek protein konsantrasyonu ile süt ineklerinin yoğun laktasyon döneminde artan besin ihtiyaçlarını karşılamak üzere geliştirilmiş premium bir süt yemidir. %36 ham protein oranı ile süt verimini ve kalitesini en üst düzeye çıkarır.',
+    nutrition: {
+      'Ham Protein': '%36',
+      'Ham Yağ': '%4-6',
+      'Ham Selüloz': '%6-8',
+      'Kalsiyum': '%1.2-1.6',
+      'Fosfor': '%0.7-0.9',
+      'Metabolik Enerji': '2900 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Yüksek verimli süt inekleri, yoğun laktasyon dönemi.',
+    recommendation: 'Günlük rasyona ek olarak 2-4 kg arası, süt verimine bağlı olarak ayarlanarak verilmelidir.',
+  },
+
   // Buzağı Yemlerimiz
   {
     id: 9,
@@ -207,6 +242,86 @@ export const products = [
     weight: '50 kg',
     usage: 'Buzağılar, erken dönem büyütme programları.',
     recommendation: 'İlk haftadan itibaren serbest erişimli olarak sunulabilir. Anne sütü/süt ikame yemi ile birlikte verilmelidir.',
+  },
+
+  {
+    id: 14,
+    name: 'Naz Buzağı Başlangıç',
+    category: 'Buzağı Yemlerimiz',
+    image: nazBuzagiBaslangic,
+    shortDesc: 'Buzağıların ilk günlerinden itibaren sağlıklı gelişimi için başlangıç yemi.',
+    description: 'Egebey Naz Buzağı Başlangıç Yemi, yeni doğan buzağıların erken dönem beslenmesi için özel olarak formüle edilmiştir. Yüksek sindirilebilirlik oranı ile rumen gelişimini hızlandırır. Bağışıklık sistemini güçlendiren vitamin ve mineral katkıları içerir.',
+    nutrition: {
+      'Ham Protein': '%18-20',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%6-8',
+      'Kalsiyum': '%1.0-1.4',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2900 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Yeni doğan buzağılar, buzağı başlangıç programları.',
+    recommendation: 'Doğumdan itibaren serbest erişimli olarak sunulabilir. Anne sütü veya süt ikame yemi ile birlikte verilmelidir.',
+  },
+
+  {
+    id: 15,
+    name: 'Bahar Buzağı Büyütme',
+    category: 'Buzağı Yemlerimiz',
+    image: baharBuzagiBuyutme,
+    shortDesc: 'Buzağıların büyüme döneminde sağlıklı gelişimini destekleyen özel yem.',
+    description: 'Egebey Bahar Buzağı Büyütme Yemi, buzağıların büyüme döneminde ihtiyaç duyduğu besin maddelerini dengeli biçimde sunar. Rumen gelişimini destekleyen yapısı ile buzağıların kaba yeme geçiş sürecini kolaylaştırır. Vitamin ve mineral takviyeli formülü ile bağışıklık sistemini güçlendirir.',
+    nutrition: {
+      'Ham Protein': '%18-20',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%6-8',
+      'Kalsiyum': '%1.0-1.4',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2900 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Buzağılar, büyütme dönemi beslenme programları.',
+    recommendation: 'İlk haftadan itibaren serbest erişimli olarak sunulabilir. Anne sütü veya süt ikame yemi ile birlikte verilmelidir.',
+  },
+
+  // Düve Yemlerimiz
+  {
+    id: 16,
+    name: 'Düve Yemi',
+    category: 'Düve Yemlerimiz',
+    image: duveYemi,
+    shortDesc: 'Düvelerin sağlıklı gelişimi ve damızlık performansı için özel formül.',
+    description: 'Egebey Düve Yemi, büyüme çağındaki düvelerin dengeli gelişimini desteklemek üzere formüle edilmiştir. Kemik ve kas gelişimini destekleyen protein, mineral ve vitamin içeriği ile düvelerin damızlık kalitesini artırır.',
+    nutrition: {
+      'Ham Protein': '%15-17',
+      'Ham Yağ': '%3-4',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%0.9-1.3',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2650 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Düveler, damızlık yetiştirme programları.',
+    recommendation: 'Günlük 6-10 kg arasında, hayvanın canlı ağırlığına ve gelişim dönemine göre ayarlanarak kaba yem ile birlikte verilmelidir.',
+  },
+  {
+    id: 17,
+    name: 'Gebe Düve Yemi',
+    category: 'Düve Yemlerimiz',
+    image: gebeDuveYemi,
+    shortDesc: 'Gebe düvelerin gebelik döneminde ihtiyaç duyduğu besinleri sağlayan özel yem.',
+    description: 'Egebey Gebe Düve Yemi, gebelik dönemindeki düvelerin hem kendi gelişimini hem de yavrunun sağlıklı büyümesini desteklemek için özel olarak hazırlanmıştır. Zengin vitamin ve mineral içeriği ile doğum öncesi beslenme ihtiyaçlarını eksiksiz karşılar.',
+    nutrition: {
+      'Ham Protein': '%16-18',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%8-10',
+      'Kalsiyum': '%1.0-1.4',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2700 kcal/kg',
+    },
+    weight: '50 kg',
+    usage: 'Gebe düveler, gebelik dönemi beslenme programları.',
+    recommendation: 'Günlük 8-12 kg arasında, gebelik dönemine göre ayarlanarak kaliteli kaba yem ile birlikte verilmelidir.',
   },
 
   // Kanatlı Yemlerimiz
@@ -248,6 +363,196 @@ export const products = [
     usage: '0-6 haftalık civcivler, civciv büyütme programları.',
     recommendation: 'İlk günden itibaren serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
   },
+  {
+    id: 19,
+    name: 'Gezen Tavuk Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: gezenTavukYemi,
+    shortDesc: 'Serbest gezen tavuklar için doğal içerikli özel yem.',
+    description: 'Egebey Gezen Tavuk Yemi, serbest gezen tavukların beslenme ihtiyaçlarına uygun olarak formüle edilmiştir. Doğal hammaddelerden üretilen yapısı ile hem yumurta verimini hem de yumurta kalitesini artırır. Tavukların doğal yaşam koşullarına uygun dengeli besin içeriği sunar.',
+    nutrition: {
+      'Ham Protein': '%16-17',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%3.5-4.0',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2750 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Serbest gezen tavuklar, organik tavuk yetiştiriciliği.',
+    recommendation: 'Her tavuk için günlük 110-130 g arasında, sürekli ulaşılabilir şekilde sunulmalıdır.',
+  },
+  {
+    id: 20,
+    name: 'Yumurta Tavuk 1. Dönem Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: yumurtaTavuk1Donem,
+    shortDesc: 'Yumurtaya yeni başlayan tavuklar için 1. dönem özel yemi.',
+    description: 'Egebey Yumurta Tavuk 1. Dönem Yemi, yumurta üretimine yeni başlayan genç tavukların ilk dönem beslenme ihtiyaçlarını karşılamak üzere özel olarak formüle edilmiştir. Yumurta veriminin sağlıklı başlamasını destekleyen kalsiyum ve protein dengesi sunar.',
+    nutrition: {
+      'Ham Protein': '%17-18',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%3.0-3.5',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2750 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Yumurtaya yeni başlayan tavuklar, 1. dönem yumurta programları.',
+    recommendation: 'Her tavuk için günlük 100-120 g arasında, sürekli ulaşılabilir şekilde sunulmalıdır.',
+  },
+  {
+    id: 21,
+    name: 'Yumurta Civciv Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: yumurtaCivcivYemi,
+    shortDesc: 'Yumurta ırkı civcivlerin sağlıklı gelişimi için özel başlangıç yemi.',
+    description: 'Egebey Yumurta Civciv Yemi, yumurta ırkı civcivlerin ilk haftalarında ihtiyaç duyduğu yüksek protein ve enerjiyi sağlamak üzere özel olarak formüle edilmiştir. Bağışıklık sistemini güçlendiren vitamin ve mineral katkıları ile civcivlerin sağlıklı büyümesini destekler.',
+    nutrition: {
+      'Ham Protein': '%20-22',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%4-6',
+      'Kalsiyum': '%1.0-1.2',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2950 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Yumurta ırkı civcivler, 0-6 haftalık dönem.',
+    recommendation: 'İlk günden itibaren serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
+  {
+    id: 22,
+    name: 'Etlik Civciv Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: etlikCivcivYemi,
+    shortDesc: '%21 protein ile etlik civcivlerin hızlı ve sağlıklı büyümesi için özel yem.',
+    description: 'Egebey Etlik Civciv Yemi, etlik piliç yetiştiriciliğinde civcivlerin hızlı büyümesi ve sağlıklı gelişimi için özel olarak formüle edilmiştir. %21 ham protein içeriği ile kas gelişimini destekler, yüksek enerji değeri ile hızlı canlı ağırlık artışı sağlar.',
+    nutrition: {
+      'Ham Protein': '%21',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%4-6',
+      'Kalsiyum': '%1.0-1.2',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '3000 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Etlik civcivler, broiler yetiştirme programları.',
+    recommendation: 'İlk günden itibaren serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
+  {
+    id: 23,
+    name: 'Etlik Piliç Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: etlikPilicYemi,
+    shortDesc: '%19 protein ile etlik piliçlerin verimli büyümesi için özel yem.',
+    description: 'Egebey Etlik Piliç Yemi, etlik piliçlerin büyütme ve bitirme döneminde ihtiyaç duyduğu besin maddelerini dengeli biçimde sunar. %19 ham protein içeriği ile sağlıklı kas gelişimini destekler ve kesim ağırlığına ulaşmayı hızlandırır.',
+    nutrition: {
+      'Ham Protein': '%19',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%0.9-1.2',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2900 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Etlik piliçler, broiler büyütme ve bitirme programları.',
+    recommendation: 'Civciv yeminden sonra serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
+  {
+    id: 24,
+    name: 'Yumurta Piliç Büyütme Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: yumurtaPilicBuyutme,
+    shortDesc: 'Yumurta ırkı piliçlerin büyütme dönemi için özel formül.',
+    description: 'Egebey Yumurta Piliç Büyütme Yemi, yumurta ırkı piliçlerin civcivlik döneminden yumurta verimine geçiş sürecinde dengeli gelişimini desteklemek üzere formüle edilmiştir. Kemik ve kas yapısının güçlenmesini sağlayarak piliçleri verimli bir yumurta dönemine hazırlar.',
+    nutrition: {
+      'Ham Protein': '%16-18',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%1.0-1.5',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2800 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Yumurta ırkı piliçler, 7-18 haftalık büyütme dönemi.',
+    recommendation: 'Civciv yeminden sonra serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
+  {
+    id: 25,
+    name: 'Yumurta Piliç Geliştirme Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: yumurtaPilicGelistirme,
+    shortDesc: 'Yumurta ırkı piliçlerin yumurtaya hazırlık dönemi için geliştirme yemi.',
+    description: 'Egebey Yumurta Piliç Geliştirme Yemi, yumurta ırkı piliçlerin büyütme döneminden yumurta verimine geçiş aşamasında ihtiyaç duyduğu besin maddelerini karşılamak üzere formüle edilmiştir. Üreme organlarının gelişimini destekler ve piliçleri verimli bir yumurta dönemine hazırlar.',
+    nutrition: {
+      'Ham Protein': '%15-17',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%1.5-2.0',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2750 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Yumurta ırkı piliçler, yumurtaya hazırlık dönemi.',
+    recommendation: 'Büyütme yeminden sonra serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
+  {
+    id: 26,
+    name: 'Hindi Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: hindiYemi,
+    shortDesc: 'Hindilerin sağlıklı gelişimi ve verimli büyümesi için özel yem.',
+    description: 'Egebey Hindi Yemi, hindilerin büyüme ve gelişim döneminde ihtiyaç duyduğu tüm besin maddelerini dengeli biçimde sunar. Yüksek protein ve enerji içeriği ile hindilerin hızlı ve sağlıklı kilo alımını destekler.',
+    nutrition: {
+      'Ham Protein': '%18-20',
+      'Ham Yağ': '%4-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%1.2-1.5',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2850 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Hindiler, hindi yetiştirme programları.',
+    recommendation: 'Serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
+  {
+    id: 27,
+    name: 'Kaz Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: kazYemi,
+    shortDesc: 'Kazların sağlıklı gelişimi ve verimli büyümesi için özel yem.',
+    description: 'Egebey Kaz Yemi, kazların büyüme ve gelişim döneminde ihtiyaç duyduğu tüm besin maddelerini dengeli biçimde sunar. Kazların doğal beslenme alışkanlıklarına uygun formülü ile sağlıklı kilo alımını ve tüy gelişimini destekler.',
+    nutrition: {
+      'Ham Protein': '%16-18',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%5-7',
+      'Kalsiyum': '%1.0-1.4',
+      'Fosfor': '%0.5-0.7',
+      'Metabolik Enerji': '2750 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Kazlar, kaz yetiştirme programları.',
+    recommendation: 'Serbest erişimli olarak sunulmalıdır. Otlak ile birlikte desteklenerek verilmesi önerilir.',
+  },
+  {
+    id: 28,
+    name: 'Deve Kuşu Yemi',
+    category: 'Kanatlı Yemlerimiz',
+    image: deveKusuYemi,
+    shortDesc: 'Deve kuşlarının sağlıklı gelişimi ve verimli büyümesi için özel yem.',
+    description: 'Egebey Deve Kuşu Yemi, deve kuşlarının büyüme ve gelişim döneminde ihtiyaç duyduğu tüm besin maddelerini karşılamak üzere özel olarak formüle edilmiştir. Yüksek protein ve mineral içeriği ile kemik ve kas gelişimini destekler.',
+    nutrition: {
+      'Ham Protein': '%18-20',
+      'Ham Yağ': '%3-5',
+      'Ham Selüloz': '%6-8',
+      'Kalsiyum': '%1.2-1.6',
+      'Fosfor': '%0.6-0.8',
+      'Metabolik Enerji': '2800 kcal/kg',
+    },
+    weight: '25 kg',
+    usage: 'Deve kuşları, deve kuşu yetiştirme programları.',
+    recommendation: 'Serbest erişimli olarak sunulmalıdır. Temiz ve taze su her zaman bulundurulmalıdır.',
+  },
 ];
 
-export const categories = ['Tümü', 'Besi Yemlerimiz', 'Süt Yemlerimiz', 'Buzağı Yemlerimiz', 'Kanatlı Yemlerimiz'];
+export const categories = ['Tümü', 'Besi Yemlerimiz', 'Süt Yemlerimiz', 'Buzağı Yemlerimiz', 'Düve Yemlerimiz', 'Kanatlı Yemlerimiz'];
