@@ -16,6 +16,7 @@ import factoryExterior from '../assets/factory-exterior.jpeg';
 import truckFleet from '../assets/truck-fleet.jpeg';
 import factoryAerial from '../assets/factory-aerial.jpeg';
 import productBags from '../assets/product-bags.jpeg';
+import labaratuvar from '../assets/labaratuvar.jpeg';
 
 const processSteps = [
   {
@@ -240,8 +241,8 @@ const Production = () => {
                 className="rounded-3xl aspect-[4/3] overflow-hidden shadow-2xl"
               >
                 <img
-                  src={productBags}
-                  alt="Egebey Yem Ürünleri"
+                  src={labaratuvar}
+                  alt="Egebey Yem Laboratuvarı"
                   className="w-full h-full object-cover"
                 />
               </motion.div>

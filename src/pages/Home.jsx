@@ -29,6 +29,8 @@ import calfProduct from '../assets/calf-product.jpeg';
 import truckFleet from '../assets/truck-fleet.jpeg';
 import goatBarn from '../assets/goat-barn.jpeg';
 import factoryExterior from '../assets/factory-exterior.jpeg';
+import labaratuvar from '../assets/labaratuvar.jpeg';
+import sahadanKareler from '../assets/sahadan-kareler.jpeg';
 
 const highlights = [
   { icon: GiStarMedal, title: 'Üstün Kalite', desc: 'ISO standartlarında üretim ve sürekli kalite kontrol.' },
@@ -363,6 +365,8 @@ const Home = () => {
               { src: calfProduct, alt: 'Buzağı Büyütme Tomurcuk', span: '' },
               { src: truckFleet, alt: 'Egebey Yem Lojistik Filosu', span: 'col-span-2' },
               { src: goatBarn, alt: 'Keçi Çiftliğinde Egebey Yem', span: '' },
+              { src: labaratuvar, alt: 'Egebey Yem Laboratuvarı', span: '' },
+              { src: sahadanKareler, alt: 'Egebey Yem Saha Ziyareti', span: '' },
             ].map((item, i) => (
               <motion.div
                 key={i}
